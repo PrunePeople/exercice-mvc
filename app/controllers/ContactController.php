@@ -7,7 +7,9 @@ class ContactController extends Controller {
     }
 
     public function submit($formData) {
-        // Récupérer les données du formulaire de contact
-        // Envoyer les données par email à une adresse prédéfinie
+        // Envoyer les données du formulaire de contact par email
+        // à une adresse prédéfinie
+        $this->sendEmail('contact@example.com', $formData);
+        $this->view('contact/success');
     }
 }

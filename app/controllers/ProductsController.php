@@ -1,4 +1,6 @@
 <?php
+require_once '../app/models/ProductModel.php';
+
 // Objectif : Créer un contrôleur pour afficher une liste de produits en utilisant une vue 
 
 class ProductsController extends Controller {

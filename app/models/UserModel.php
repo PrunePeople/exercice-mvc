@@ -4,6 +4,6 @@ class UserModel { // Définition d'une classe
     public $username; // Ajout d'une propriété
 
     public function save($userData) { // Ajout d'une méthode
-        $this->username = $userData['username']; // Stock dans propriété
+        $this->username = $userData['username'];
     }
 }
